@@ -1,5 +1,3 @@
-== README
-
 #Shelter Nash
 
 This is an app that will track the number of open beds that each homeless shelter around the city of Nashville has at any given time.
