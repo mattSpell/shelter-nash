@@ -1,0 +1,15 @@
+%header.centered-navigation
+  .centered-navigation-wrapper
+    %a.mobile-logo{:href => "javascript:void(0)"}
+      %img= image_tag('home.png')
+    %a.centered-navigation-menu-button{:href => ""} MENU
+    %ul.centered-navigation-menu
+      -# %li.nav-link
+      -#   %a{:href => "javascript:void(0)"} About Us
+      %li.nav-link
+        %a{:href => "javascript:void(0)"} Contact
+      %li.nav-link.logo
+        %a.logo{:href => "/"}
+          %img= image_tag('home.png')
+      %li.nav-link
+        %a{:href => "javascript:void(0)"} Sign up
