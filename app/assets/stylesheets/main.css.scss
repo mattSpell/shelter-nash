@@ -1,0 +1,16 @@
+
+form.new_user{
+  @include outer-container;
+  width: 50%;
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+form ~ a{
+  display: none;
+}
+
+h2 {
+  text-align: center;
+}
