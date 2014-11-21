@@ -3,3 +3,22 @@
   %h1.name Shelter Nash
 
   %p.desc Shelter Nash is an app for the Greater Nashville Community to use to keep up with how many open beds there are in the homeless shelters around town at any given time.
+
+  - @users.each do |user|
+    .hero
+      .hero-inner
+        -# %a.hero-logo{:href => ""}
+        -#   %img{:alt => "Logo Image", :src => "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png\r\n"}/
+        .hero-copy
+          %h1= user.name
+          %p= user.description
+          %h5 Status:
+          %p= user.status
+
+  -# .user-box
+  -#   - @users.each do |user|
+  -#     %div.each-user
+  -#       %h3= user.name
+  -#       %p= user.description
+  -#       %h5 Status:
+  -#       %p= user.status

@@ -1,15 +1,12 @@
 #Shelter Nash
 
 This is an app that will track the number of open beds that each homeless shelter around the city of Nashville has at any given time.
-This project will use Rails as a backend API and Angular.js on the front end.
 
 ### Technologies used:
 - Ruby 2.1.2
-- AJAX
 - Sass/Bourbon/Bitters/Neat
 - Devise/OmniAuth
 - RSpec/Capybara
-- Angular.js
 - PostgreSQL
 
 ### License
