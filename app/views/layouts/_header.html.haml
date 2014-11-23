@@ -15,6 +15,9 @@
       %li.nav-link.logo
         %a.logo{:href => "/"}
           %img= image_tag('home.png')
-        - unless user_signed_in?
+        - if user_signed_in?
+          %li.nav-link
+            %a= link_to "Update", edit_user_registration_path, :class => "logout"
+        - else
           %li.nav-link
             %a.sign-up{:href => new_user_session_path} Log In

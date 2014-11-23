@@ -7,12 +7,25 @@ form.new_user{
   border-radius: 10px;
 }
 
-form ~ a{
-  display: none;
-}
+// form ~ a{
+//   display: none;
+// }
 
 h2 {
   text-align: center;
+  margin-top: 1em;
+}
+.field > .sign-up{
+  @include outer-container;
+  max-width: 40%;
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.link-container{
+  @include outer-container;
+  text-align: center;
+  margin-bottom: 2em;
 }
 
 
@@ -23,7 +36,7 @@ h2 {
   $hero-background-bottom: #20392B;
   $hero-color: white;
   $gradient-angle: 10deg;
-  $hero-image: 'https:raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png';
+  $hero-image: 'bread.jpg';
 
   @include background(url($hero-image), linear-gradient($gradient-angle, $hero-background-bottom, $hero-background-top), no-repeat $hero-background-top scroll);
   clear: left;
@@ -71,5 +84,12 @@ h2 {
         }
       }
     }
+  }
+}
+
+// RESPONSIVENESS
+@media screen and (max-device-width: 500px) {
+  form.new_user{
+    width: 90%;
   }
 }
