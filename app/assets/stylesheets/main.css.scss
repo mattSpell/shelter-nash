@@ -1,5 +1,5 @@
 
-form.new_user{
+form.new_user, form.edit_user, .cancel_time{
   @include outer-container;
   width: 50%;
   background-color: white;
