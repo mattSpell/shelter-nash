@@ -8,6 +8,7 @@ gem 'bitters'
 gem 'pry'
 gem 'devise'
 gem 'haml'
+gem 'html2haml'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

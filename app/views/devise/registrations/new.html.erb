@@ -1,0 +1,48 @@
+<h2>Sign up</h2>
+<div class="field">
+  <p class="sign-up">If you operate a homeless shelter in the Nashville area, we encourage you to create an account and keep your status updated regularly so that others can keep track of your vacancy.</p>
+</div>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+<%= devise_error_messages! %>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @validatable %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  </div>
+
+  
+  <div class="field"> 
+    <%= f.label :name %><br /> 
+    <%= f.text_field :name %>
+  </div>
+   
+  <div class="field"> 
+    <%= f.label :status %><br /> 
+    <%= content_tag :p, "Ex: Overflowing, Open Beds: 10, etc..." %>
+    <%= f.text_field :status %>
+  </div>
+
+  <div class="field"> 
+    <%= f.label :description %><br /> 
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
