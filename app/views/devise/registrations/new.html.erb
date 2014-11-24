@@ -23,21 +23,21 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  
-  <div class="field"> 
-    <%= f.label :name %><br /> 
+
+  <div class="field">
+    <%= f.label :name %><br />
     <%= f.text_field :name %>
   </div>
-   
-  <div class="field"> 
-    <%= f.label :status %><br /> 
+
+  <div class="field">
+    <%= f.label :status %><br />
     <%= content_tag :p, "Ex: Overflowing, Open Beds: 10, etc..." %>
     <%= f.text_field :status %>
   </div>
 
-  <div class="field"> 
-    <%= f.label :description %><br /> 
-    <%= f.text_field :description %>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
   </div>
 
   <div class="actions">
