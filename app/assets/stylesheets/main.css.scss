@@ -89,7 +89,7 @@ h2 {
 
 // RESPONSIVENESS
 @media screen and (max-device-width: 500px) {
-  form.new_user{
+  form.new_user, p.desc, p.sign-up{
     width: 90%;
   }
 }
